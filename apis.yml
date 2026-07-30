@@ -1,7 +1,31 @@
 aid: knote
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/knote.png
 name: Knote
-description: Knote is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Knote is a small New York-based startup backed by 500 Global, surfaced through the
+  500 Global portfolio and added to the API Evangelist network as an enrichment lead. Third-party
+  company databases describe it inconsistently: Tracxn profiles Knote as a knowledge-management
+  platform that raised roughly $150K from 500 Global, while Dealroom describes it as an AI-powered
+  email summarization and management tool. No first-party description could be confirmed. As of the
+  2026-07-19 enrichment pass the knote.com web property is offline — the domain resolves (Cloudflare
+  nameservers, an EC2 A record, live Google Workspace MX and an SPF record including Mailgun and
+  Mailchimp) but refuses connections on both port 80 and port 443, so no homepage, developer portal,
+  documentation, API reference, or machine-readable specification could be retrieved. No corporate
+  GitHub organization, package-registry client library, or public API surface was found; the
+  GitHub repositories named "Knote" are unrelated third-party note-taking and Kubernetes-course
+  projects. This profile therefore carries only what could be independently verified: the funding
+  and identity facts above plus a live DNS/TLS domain-security probe. It should be treated as a
+  dormant or defunct lead and re-checked if the domain returns to service.'
 url: https://raw.githubusercontent.com/api-evangelist/knote/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,22 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: offline
+x-status-checked: '2026-07-19'
+x-status-detail: knote.com DNS resolves but refuses connections on ports 80 and 443; no web,
+  docs, or API surface reachable. No OpenAPI, SDKs, GitHub org, or developer portal found.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Startup
+- Knowledge Management
+- Notes
+- Productivity
+- Collaboration
+- 500 Global
+- Dormant
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +56,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/knote-domain-security.yml
 - type: Website
   url: https://knote.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
