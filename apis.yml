@@ -37,7 +37,7 @@ x-status: offline
 x-status-checked: '2026-07-19'
 x-status-detail: knote.com DNS resolves but refuses connections on ports 80 and 443; no web,
   docs, or API surface reachable. No OpenAPI, SDKs, GitHub org, or developer portal found.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
