@@ -53,8 +53,7 @@ created: '2026-07-17'
 modified: '2026-07-19'
 tags:
 - Company
-- Startups
-- Knowledge-Management
+- Knowledge Management
 - Notes
 - Productivity
 - Collaboration
@@ -62,13 +61,13 @@ tags:
 - Dormant
 tags_raw:
 - Company
-- Startup
 - Knowledge Management
 - Notes
 - Productivity
 - Collaboration
 - 500 Global
 - Dormant
+- Knowledge-Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -85,3 +84,7 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-tags-removed:
+- Startups
+x-company-stage: venture-backed
+x-company-stage-evidence: "own tags: Startup, 500 Global"
